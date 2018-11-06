@@ -12,8 +12,9 @@ To facilate research of VQA-VE, we construct a new dataset called **ActivityNet-
 **Open-ended**: Activity-QA is an open-ended dataset that a natural language answer is expected to be produced word by word. The length distribution of questions and answers are shown in Figure 2 and Figure 3. Compared with other open-ended VideoQA datasets, our QA pairs are longer and share rich vocabulary diversity. The total number of words appearing in ActivityNet-QA is 4992.
 ![q_length](https://github.com/VQA-VE/VQA-VE/blob/master/pic/qlength.jpg "Question length distribution")
 <center>*Figure 2. Question length distribution of Activity-QA.*</center>
-![a_length](https://github.com/VQA-VE/VQA-VE/blob/master/pic/answerlength.jpg "Answer length distribution")
+![a_length](https://github.com/VQA-VE/VQA-VE/blob/master/pic/answerlength.jpg "Answer length distribution")  
 <center>*Figure 3. Answer length distribution of Activity-QA.*</center>
+
   
 **Action-centric and time-centric**: Corresponding to dynamic and temporal characteristics of videos, QA pairs in Activity-QA feature action-centric and time-centric. Specifically, questions in Activity-QA are all about events or actions of people or objects. Most of our questions contain temporal adverbial such as ‘after’, ‘at first’, ‘the second time’ *etc*.
   
