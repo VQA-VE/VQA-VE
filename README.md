@@ -20,11 +20,13 @@ To facilate research of VQA-VE, we construct a new dataset called **ActivityNet-
   
 More importantly, we double check QA pairs to make sure each one only matches one exact part in the whole video, and filter out QA pairs which are not action-centric and timecentric. Under such strict standards, we collect 12059 temporally annotated QA pairs for 7304 videos in total.
 
-**Examples**: `Videos we choose to show here are short limited to the size constraint of GIF in github, most of videos in our dataset are much longer that the lengths are always beyond one minutes. Besides, most of our videos contain more than one QA pairs.`
+**Examples**: `Videos we choose to show here are short limited to the size constraint of GIF in github. However, most of videos in our dataset are much longer that the lengths are always beyond one minutes. Besides, most of our videos contain more than one QA pairs.`
 
 | Video | Temporally Annotated QA pairs |
 | ---- | ---- |
-|![example1](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example1.gif "Example1") | *questions*: What is the man doing before he shows the razor to the camera? *answers*: He is shaving under his chin. *visual explanation*: [0, 17.09]  |
+|![example1](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example1.gif "Example1") | *questions*: What is the man doing before he shows the razor to the camera?  
+*answers*: He is shaving under his chin.  
+*visual explanation*: [0, 17.09]  |
 |![example2](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example2.gif "Example2") | *questions*: What does the man do after he gets off the tractor? *answers*: He walks while pushing the tractor. *visual explanation*: [32.28, 39.29]  |
 |![example3](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example3.gif "Example3") | *questions*: What does the little girl do before she stands up and walks away? *answers*: She slides down a blue slide in a theme park. *visual explanation*: [1.93, 17.78]  |
 |![example4](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example4.gif "Example4") | *questions*: What does the man do after he puts on his eye mask? *answers*: He begins to solve a cube. *visual explanation*: [6.26, 16.17]  |
