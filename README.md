@@ -22,7 +22,7 @@ More importantly, we double check QA pairs to make sure each one only matches on
 
 **Examples**: `Videos we choose to show here are short limited to the size constraint of GIF in github. However, most of videos in our dataset are much longer that the lengths are always beyond one minutes. Besides, most of our videos contain more than one QA pairs.`
 
-| Video | Temporally Annotated QA pairs |
+| Videos | Temporally Annotated QA pairs |
 | ---- | ---- |
 |![example1](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example1.gif "Example1") | **Question**: ["What is the man doing before he shows the razor to the camera?"]  **Answer**: ["He is shaving under his chin."]  **Visual Explanation**: [0, 17.09]  |
 |![example2](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example2.gif "Example2") | **Question**: ["What does the man do after he gets off the tractor?"]  **Answer**: ["He walks while pushing the tractor."]  **Visual Explanation**: [32.28, 39.29]  |
@@ -39,7 +39,7 @@ Towards VQA-VE, we develop a new model of multi-task framework to generate answe
 features. Then cross-modal features are refined by visual attention and semantic attention, and fed into multi-modal fusion module for fully fusing. Finally, a GRU and attention mechanism are used to generate answers and locate visual explanations.*
 
 ## New Metrics
-VQA-VE is a compositional task that requires to generate natural language sentences as answers and locate relevant moment simultaneously. Only evaluating the answer quality or localization quality is not enough. We consider both and design two new metrics which can fairly measure the performance of VQA-VE task. One is called ‘hard metric’: when calculated IoU higher than the given threshold, we set it to 1.0, otherwise 0.0. Specifically, we compute ‘WUPS=n, IoU=m’ which means we set threshold n for WUPS and m for IoU, and ‘R@t’ means the top-t results we pick to compute the hard metric. Another is called ‘soft metric’, in which case we don’t set any threshold for IoU. Instead, we pick the calculated IoU as confidence score for predicted answer and multiply with the WUPS score to measure the whole task quality.
+VQA-VE is a compositional task that requires to generate natural language sentences as answers and locate relevant moment simultaneously. Only evaluating the answer quality or localization quality is not enough. We consider both and design two new metrics which can fairly measure the performance of VQA-VE task. One is called ‘**hard metric**’: when calculated IoU higher than the given threshold, we set it to 1.0, otherwise 0.0. Specifically, we compute ‘WUPS=n, IoU=m’ which means we set threshold n for WUPS and m for IoU, and ‘R@t’ means the top-t results we pick to compute the hard metric. Another is called ‘**soft metric**’, in which case we don’t set any threshold for IoU. Instead, we pick the calculated IoU as confidence score for predicted answer and multiply with the WUPS score to measure the whole task quality.
 
 ## Experiments
 
