@@ -4,7 +4,7 @@
 
 We introduce a new task called **Video Question Answering with Visual Explanation (VQA-VE)**, which requires to generate natural language sentences as answers and provide visual explanations (i.e., locating relevant moment within the whole video) simultaneously. As shown below, a visual explanation can be taken as an evidence to justify if predicted answers are convincible and traceable, or as a supplementary that provide relevant information on the context of QA pairs, or even as a specification that indicates vague expressions or abstract concepts in QA pairs vividly. This task bridges two separate and typical visual tasks: video question answering and temporal localization, and also comes with its own set of challenges.
 
-![Task](https://github.com/VQA-VE/VQA-VE/blob/master/pic/GIF.gif "An overview of our task")
+![Task](https://github.com/VQA-VE/VQA-VE/blob/master/pic/task.jpn "An overview of our task")
 *VQA-VE requires to provide visual explanation for predicted answers. There are advantages for visual explanation: (Left) visual explanation can serve as an evidence to justify the correctness of answers; (Middle) visual explanation can provide supplementary information for the content of QA pairs; (Right) visua lexplanation can give clear indication to elaborate the vague expression in QA pairs.*
 
 ## New Dataset: ActivityNet-QA
@@ -19,6 +19,12 @@ To facilate research of VQA-VE, we construct a new dataset called **ActivityNet-
 ![v_length](https://github.com/VQA-VE/VQA-VE/blob/master/pic/videolength.jpg "Visual explanation length distribution of Activity-QA")
   
 More importantly, we double check QA pairs to make sure each one only matches one exact part in the whole video, and filter out QA pairs which are not action-centric and timecentric. Under such strict standards, we collect 12059 temporally annotated QA pairs for 7304 videos in total.
+
+**Examples**: Examples we choose are limited to the size constraint of GIF in the github, most of our videos are much long.
+
+| Video | Temporally Annotated QA pairs |
+| ---- | ---- |
+|![example1][https://github.com/VQA-VE/VQA-VE/blob/master/pic/example1.gif] | "questions": ["What is the man doing before he shows the razor to the camera?"]  "answers": ["He is shaving under his chin."]  "visual explanation": [[0, 17.09]]  |
 
 ## New Model
 Towards VQA-VE, we develop a new model of multi-task framework to generate answers and provide visual explanations simultaneously. Specifically, we design an answer prediction module that employs visual attention and semantic attention to fully fuse cross-modal feature and generate complete natural language sentences as answers. We also design a localization module to locate relevant moment with various time spans within the whole video using semantic information as guidance.  
