@@ -20,13 +20,17 @@ To facilate research of VQA-VE, we construct a new dataset called **ActivityNet-
   
 More importantly, we double check QA pairs to make sure each one only matches one exact part in the whole video, and filter out QA pairs which are not action-centric and timecentric. Under such strict standards, we collect 12059 temporally annotated QA pairs for 7304 videos in total.
 
-**Examples**: Examples we choose are limited to the size constraint of GIF in the github, most of our videos are much long.
+**Examples**: `Videos we choose to show here are short limited to the size constraint of GIF in github, most of videos in our dataset are much longer that the lengths are always beyond one minutes. Besides, most of our videos contain more than one QA pairs.`
 
 | Video | Temporally Annotated QA pairs |
 | ---- | ---- |
-|![example1](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example1.gif "Example1") | "questions": ["What is the man doing before he shows the razor to the camera?"]  
-"answers": ["He is shaving under his chin."]  
-"visual explanation": [[0, 17.09]]  |
+|![example1](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example1.gif "Example1") | *questions*: What is the man doing before he shows the razor to the camera? *answers*: He is shaving under his chin. *visual explanation*: [0, 17.09]  |
+|![example2](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example2.gif "Example2") | *questions*: What does the man do after he gets off the tractor? *answers*: He walks while pushing the tractor. *visual explanation*: [32.28, 39.29]  |
+|![example3](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example3.gif "Example3") | *questions*: What does the little girl do before she stands up and walks away? *answers*: She slides down a blue slide in a theme park. *visual explanation*: [1.93, 17.78]  |
+|![example4](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example4.gif "Example4") | *questions*: What does the man do after he puts on his eye mask? *answers*: He begins to solve a cube. *visual explanation*: [6.26, 16.17]  |
+|![example5](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example5.gif "Example5") | *questions*: What is the baby doing before climbing onto the sand dune? *answers*: He is digging the sand off of the sand dune using his small hands. *visual explanation*: [0, 2.77] *questions*: What does the baby do after digging the sand off of the sand dune? *answers*: He starts to try and climb onto the sand dune and he looks at the camera once. *visual explanation*: [2.77, 8.31] |
+|![example6](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example6.gif "Example6") | *questions*: What does the man do before the axe is stuck on the tree? *answers*: He lifts his ax and brings it down with force. *visual explanation*: [0.45, 3.24] *questions*: What happened after the man lifts his ax and brings it down with force? *answers*: The axe is stuck on the tree. *visual explanation*: [3.58, 4.69] |
+
 
 ## New Model
 Towards VQA-VE, we develop a new model of multi-task framework to generate answers and provide visual explanations simultaneously. Specifically, we design an answer prediction module that employs visual attention and semantic attention to fully fuse cross-modal feature and generate complete natural language sentences as answers. We also design a localization module to locate relevant moment with various time spans within the whole video using semantic information as guidance.  
