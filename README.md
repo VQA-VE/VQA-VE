@@ -24,14 +24,12 @@ More importantly, we double check QA pairs to make sure each one only matches on
 
 | Video | Temporally Annotated QA pairs |
 | ---- | ---- |
-|![example1](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example1.gif "Example1") | *questions*: What is the man doing before he shows the razor to the camera?  
-*answers*: He is shaving under his chin.  
-*visual explanation*: [0, 17.09]  |
-|![example2](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example2.gif "Example2") | *questions*: What does the man do after he gets off the tractor? *answers*: He walks while pushing the tractor. *visual explanation*: [32.28, 39.29]  |
-|![example3](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example3.gif "Example3") | *questions*: What does the little girl do before she stands up and walks away? *answers*: She slides down a blue slide in a theme park. *visual explanation*: [1.93, 17.78]  |
-|![example4](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example4.gif "Example4") | *questions*: What does the man do after he puts on his eye mask? *answers*: He begins to solve a cube. *visual explanation*: [6.26, 16.17]  |
-|![example5](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example5.gif "Example5") | *questions*: What is the baby doing before climbing onto the sand dune? *answers*: He is digging the sand off of the sand dune using his small hands. *visual explanation*: [0, 2.77] *questions*: What does the baby do after digging the sand off of the sand dune? *answers*: He starts to try and climb onto the sand dune and he looks at the camera once. *visual explanation*: [2.77, 8.31] |
-|![example6](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example6.gif "Example6") | *questions*: What does the man do before the axe is stuck on the tree? *answers*: He lifts his ax and brings it down with force. *visual explanation*: [0.45, 3.24] *questions*: What happened after the man lifts his ax and brings it down with force? *answers*: The axe is stuck on the tree. *visual explanation*: [3.58, 4.69] |
+|![example1](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example1.gif "Example1") | *Question*: What is the man doing before he shows the razor to the camera?  *Answer*: He is shaving under his chin.  *Visual Explanation*: [0, 17.09]  |
+|![example2](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example2.gif "Example2") | *Question*: What does the man do after he gets off the tractor?  *Answer*: He walks while pushing the tractor.  *Visual Explanation*: [32.28, 39.29]  |
+|![example3](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example3.gif "Example3") | *Question*: What does the little girl do before she stands up and walks away?  *Answer*: She slides down a blue slide in a theme park.  *Visual Explanation*: [1.93, 17.78]  |
+|![example4](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example4.gif "Example4") | *Question*: What does the man do after he puts on his eye mask?  *Answer*: He begins to solve a cube.  *Visual Explanation*: [6.26, 16.17]  |
+|![example5](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example5.gif "Example5") | *Question*: What is the baby doing before climbing onto the sand dune?  *Answer*: He is digging the sand off of the sand dune using his small hands.  *Visual Explanation*: [0, 2.77]  *Question*: What does the baby do after digging the sand off of the sand dune?  *Answer*: He starts to try and climb onto the sand dune and he looks at the camera once.  *Visual Explanation*: [2.77, 8.31] |
+|![example6](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example6.gif "Example6") | *Question*: What does the man do before the axe is stuck on the tree?  *Answer*: He lifts his ax and brings it down with force.  *Visual Explanation*: [0.45, 3.24]  *Question*: What happened after the man lifts his ax and brings it down with force?  *Answer*: The axe is stuck on the tree.  *Visual Explanation*: [3.58, 4.69] |
 
 
 ## New Model
