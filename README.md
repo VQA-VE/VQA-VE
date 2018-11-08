@@ -24,7 +24,8 @@ More importantly, we double check QA pairs to make sure each one only matches on
 
 | Video | Temporally Annotated QA pairs |
 | ---- | ---- |
-|![example1](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example1.gif "Example1") | *Question*: ["What is the man doing before he shows the razor to the camera?"]  *Answer*: ["He is shaving under his chin."]  *Visual Explanation*: [0, 17.09]  |
+|![example1](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example1.gif "Example1") | *Question*: ["What is the man doing before he shows the razor to the camera?"]  
+*Answer*: ["He is shaving under his chin."]  *Visual Explanation*: [0, 17.09]  |
 |![example2](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example2.gif "Example2") | *Question*: What does the man do after he gets off the tractor?  *Answer*: He walks while pushing the tractor.  *Visual Explanation*: [32.28, 39.29]  |
 |![example3](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example3.gif "Example3") | *Question*: What does the little girl do before she stands up and walks away?  *Answer*: She slides down a blue slide in a theme park.  *Visual Explanation*: [1.93, 17.78]  |
 |![example4](https://github.com/VQA-VE/VQA-VE/blob/master/pic/example4.gif "Example4") | *Question*: What does the man do after he puts on his eye mask?  *Answer*: He begins to solve a cube.  *Visual Explanation*: [6.26, 16.17]  |
