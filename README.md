@@ -10,8 +10,7 @@ We introduce a new task called **Video Question Answering with Visual Explanatio
 ## New Dataset: ActivityNet-QA
 To facilate research of VQA-VE, we construct a new dataset called **ActivityNet-QA** on top of ActivityNet Captions manually. Specifically, we generate temporally annotated QA pairs (each one is coupled with a start time and a end time to mark the relevant moment) by exploiting videos and temporally annotated descriptions in ActivityNet Captions. ActivityNet-QA features three characteristics:  
 **Open-ended**: Activity-QA is an open-ended dataset that a natural language answer is expected to be produced word by word. The length distribution of questions and answers are shown below. Compared with other open-ended VideoQA datasets, our QA pairs are longer and share rich vocabulary diversity. The total number of words appearing in ActivityNet-QA is 4992.
-![q_length](https://github.com/VQA-VE/VQA-VE/blob/master/pic/qlength.jpg "Question length distribution of Activity-QA")
-![a_length](https://github.com/VQA-VE/VQA-VE/blob/master/pic/answerlength.jpg "Answer length distribution of Activity-QA")  
+![qalength](https://github.com/VQA-VE/VQA-VE/blob/master/pic/qalength.jpg "Question and answer length distribution of Activity-QA")
 
 **Action-centric and time-centric**: Corresponding to dynamic and temporal characteristics of videos, QA pairs in Activity-QA feature action-centric and time-centric. Specifically, questions in Activity-QA are all about events or actions of people or objects. Most of our questions contain temporal adverbial such as ‘after’, ‘at first’, ‘the second time’ *etc*.
   
@@ -43,12 +42,9 @@ VQA-VE is a compositional task that requires to generate natural language senten
 
 ## Experiments
 
-### Comparison of Visual Encoder
-We consider three different visual features extracted by two kinds of visual encoder on Activity-QA to compare their effectiveness.
-![vencoder](https://github.com/VQA-VE/VQA-VE/blob/master/pic/visual_encoder.jpg "Performance comparison of different visual encoders")
-### Comparison of Question Encoder
-We also experiment with two kinds of question encoder to compare their effectiveness on Activity-QA.
-![qencoder](https://github.com/VQA-VE/VQA-VE/blob/master/pic/question_encoder.jpg "Performance comparison of different question encoders")
+### Comparison of Visual Encoder and Question Encoder
+We consider three different visual features extracted by two kinds of visual encoder on Activity-QA, and also experiment with two kinds of question encoder to compare their effectiveness on Activity-QA
+![comparison](https://github.com/VQA-VE/VQA-VE/blob/master/pic/comparison.jpg "Performance comparison of different visual encoders and different question encoders")
 ### Experiments on Activity-QA
 We conduct experiments on Activity-QA, and report the results evaluated by soft metric, hard metric (R@1 and R@5).   
 ![Activity-QA](https://github.com/VQA-VE/VQA-VE/blob/master/pic/Activity-QA.jpg "Experiment results on Activity-QA")
