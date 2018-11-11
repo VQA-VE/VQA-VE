@@ -1,5 +1,5 @@
 # CODE
-##Setup Instructions 
+* Setup Instructions 
 
 * Install python modules
 
