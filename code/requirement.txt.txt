@@ -1,0 +1,10 @@
+tensorflow
+h5py
+json
+numpy
+keras
+nltk
+pandas
+scipy
+tqdm
+heapq
