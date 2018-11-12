@@ -10,7 +10,7 @@ pip install -r requirement.txt
 
 * Install TensorFlow "v1.1.0"
 
-* Download Activity-QA dataset and TVQA features, then process videos and questions and generate hdf5 file.
+* Download Activity-QA dataset and TVQA features, then process videos and questions follow our paper and generate hdf5 file.
 
 Training
 -----
@@ -28,5 +28,5 @@ Evaluation
 To test the model, you should choose the metric type and specify the checkpoint path.
 
 ```
-python3 main.py --mode=test --data=xxx --ckpt=xxx --test=xxx
+python main.py --mode=test --data=xxx --ckpt=xxx --test=xxx
 ```
