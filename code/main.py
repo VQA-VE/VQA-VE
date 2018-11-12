@@ -266,9 +266,7 @@ def train(lr,totalepoch,batch_size,final_data,ixtoword,max_ques,max_cnt,att_size
                 print('step %d: %.3f sec, loss is %.3f.' % (epoch, duration,total_loss/num_batch))
                 
                 if epoch % 5 == 0:
-                    checkpoint_path = os.path.join('own path' + str(lr) + '_'+ str(batch_size) +'_' +
-                        str(skip) + '_' + str(vfeat) + str(lambda_regression) +'_'+ str(lambda_ans) 
-                        +'_' + str(alpha) + '_'+ str(att_size) + '_'+ str(hidden_size)+'_'+str(kind), 'model_{0}.ckpt'.format(epoch))
+                    checkpoint_path = os.path.join('own path', 'model_{0}.ckpt'.format(epoch))
                     if not os.path.exists(os.path.dirname(checkpoint_path)):
                         os.makedirs(os.path.dirname(checkpoint_path))
                     saver.save(sess, checkpoint_path)
