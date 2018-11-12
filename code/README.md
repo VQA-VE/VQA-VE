@@ -8,7 +8,7 @@ Setup Instructions
 pip install -r requirement.txt
 ```
 
-* Install TensorFlow "v1.1.0"
+* Install TensorFlow "v1.2.0"
 
 * Download Activity-QA dataset and TVQA features, then process videos and questions follow our paper and generate hdf5 file.
 
