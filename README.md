@@ -4,7 +4,9 @@
 
 We introduce a new task called **Video Question Answering with Visual Explanations (VQA-VE)**, which requires to generate natural language sentences as answers and provide visual explanations (i.e., locating relevant moment within the whole video) simultaneously. As shown below, a visual explanation can be taken as an evidence to justify if predicted answers are convincible and traceable, or as a supplementary that provide relevant information on the context of QA pairs, or even as a specification that indicates vague expressions or abstract concepts in QA pairs vividly. This task bridges two separate and typical visual tasks: video question answering and temporal localization, and also comes with its own set of challenges.  
 ![Task](https://github.com/VQA-VE/VQA-VE/blob/master/pic/tasks.jpg "An overview of our task")
-*VQA-VE requires to provide visual explanations for predicted answers. There are advantages for visual explanations: (Left) visual explanations can serve as evidences to justify the correctness of answers; (Middle) visual explanations can provide supplementary information for the content of QA pairs; (Right) visual explanations can give clear indication to elaborate the vague expression in QA pairs.*
+*VQA-VE requires to provide visual explanations for predicted answers. There are advantages for visual explanations: (Left)
+visual explanation can serve as an evidence to justify the correctness of answers; (Middle) visual explanation can provide supplementary
+information for the content of QA pairs; (Right) visual explanation can give clear indication to elaborate the vague expressions in QA pairs.*
 
 ## New Dataset: Activity-QA
 To facilate research of VQA-VE, we construct a new dataset called **Activity-QA** on top of ActivityNet Captions manually. Specifically, we generate temporally annotated QA pairs (each one is coupled with a start time and a end time to mark the relevant moment) by exploiting videos and temporally annotated descriptions in ActivityNet Captions. Activity-QA features three characteristics:  
@@ -32,9 +34,9 @@ More importantly, we double check QA pairs to make sure each one only matches on
 
 ## New Model
 Towards VQA-VE, we develop a new model of multi-task framework to generate answers and provide visual explanations simultaneously. Specifically, we design an answer prediction module that employs visual attention and semantic attention to fully fuse cross-modal feature and generate complete natural language sentences as answers. We also design a localization module to locate relevant moment with various time spans within the whole video using semantic information as guidance.    
-![model](https://github.com/VQA-VE/VQA-VE/blob/master/pic/models.jpg "An overview of our model")
-*The visual encoder and the question encoder as well as a GRU extract clip features and question
-features. Then cross-modal features are refined by visual attention and semantic attention, and fed into multi-modal fusion module for fully fusing. Finally, a GRU and attention mechanism are used to generate answers and locate visual explanations.*
+![model](https://github.com/VQA-VE/VQA-VE/blob/master/pic/model.jpg "An overview of our model")
+*The overview of our model. The visual encoder, question encoder, and GRU extract clip features and question features. Then
+multi-modal fusion module refines cross-modal features by visual attention and semantic attention, and element-wise addition, elementwise multiplication and concatenation followed by a Fully Connected (FC) layer are used to fully fuse refined features. Finally, answer prediction module and localization module are used to generate answers and provide visual explanations.*
 
 ## New Metrics
 VQA-VE is a compositional task that requires to generate natural language sentences as answers and locate relevant moment simultaneously. Only evaluating the answer quality or localization quality is not enough. We consider both and design two new metrics which can fairly measure the performance of VQA-VE task. One is called ‘**hard metric**’: when calculated IoU higher than the given threshold, we set it to 1.0, otherwise 0.0. Specifically, we compute ‘WUPS=n, IoU=m’ which means we set threshold n for WUPS and m for IoU, and ‘R@t’ means the top-t results we pick to compute the hard metric. Another is called ‘**soft metric**’, in which case we don’t set any threshold for IoU. Instead, we pick the calculated IoU as confidence score for predicted answer and multiply with the WUPS score to measure the whole task quality.
