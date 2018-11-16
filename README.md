@@ -34,7 +34,7 @@ More importantly, we double check QA pairs to make sure each one only matches on
 
 ## New Model
 Towards VQA-VE, we develop a new model of multi-task framework to generate answers and provide visual explanations simultaneously. Specifically, we design an answer prediction module that employs visual attention and semantic attention to fully fuse cross-modal feature and generate complete natural language sentences as answers. We also design a localization module to locate relevant moment with various time spans within the whole video using semantic information as guidance.    
-![model](https://github.com/VQA-VE/VQA-VE/blob/master/pic/model.jpg "An overview of our model")
+![model](https://github.com/VQA-VE/VQA-VE/blob/master/pic/models.jpg "An overview of our model")
 *The overview of our model. The visual encoder, question encoder, and GRU extract clip features and question features. Then
 multi-modal fusion module refines cross-modal features by visual attention and semantic attention, and element-wise addition, elementwise multiplication and concatenation followed by a Fully Connected (FC) layer are used to fully fuse refined features. Finally, answer prediction module and localization module are used to generate answers and provide visual explanations.*
 
